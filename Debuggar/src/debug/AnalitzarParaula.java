@@ -3,6 +3,7 @@ package debug;
 public class AnalitzarParaula {
 
 	private String paraula;
+	
 
 	/**
 	 * Construeix un analitzador per una paraula donada.
@@ -20,6 +21,7 @@ public class AnalitzarParaula {
 	 * @return el nombre de grups de caracters repetits
 	 */
 	public int comptarGrupsCaractersRepetits() {
+		System.out.println();
 		int comptador = 0;
 		for (int i = 1; i < paraula.length() - 1; i++) {
 			if (paraula.charAt(i) == paraula.charAt(i + 1)) {
